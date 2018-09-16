@@ -1,0 +1,39 @@
+{
+  "name": "web_tool",
+  "version": "1.0.0",
+  "description": "Minify, uglify",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "beautify": "0.0.8",
+    "body-parser": "^1.18.3",
+    "clean-css": "^4.2.1",
+    "express": "^4.13.3",
+    "terser": "^3.8.2",
+    "minify": "^3.0.5"
+  },
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishek9180/webtools"
+  },
+  "keywords": [
+    "html",
+    "html-minifier",
+    "html-beautifier",
+    "css",
+    "css-minifier",
+    "css-beautifier",
+    "javascript",
+    "js-minifier",
+    "js-beautifier",
+    "hex-to-rgb converter"
+  ],
+  "author": "Abhishek Jha",
+  "license": "ISC"
+}

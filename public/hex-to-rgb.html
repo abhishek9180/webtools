@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222">
+    <meta name="keywords" content="hex, hexadecimal, rgb, converter, hex to rgb, hexadecimal to rgb, hex to rgb converter, rgb to hex, rgb to hex converter, convert hex to rgb, convert rgb to hex, hex to rgb conversion, rgb to hex conversion, hex converter, rgb converter, simple hex to rgb converter">
+    <meta name="description" content="A simple tool for converting HEX values to RGB and RGB To HEX values.">
+    <meta property="og:title" content="HEX to RGB Converter">
+    <meta property="og:image" content="static/images/apple-touch-icon.png">
+    <meta property="og:description" content="A simple tool for converting HEX values to RGB and vice versa.">
+    <meta property="og:url" content="https://www.webfx.com/web-design/hex-to-rgb/">
+    <title>HEX to RGB Converter - Web Tools</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="hex-to-rgb-body">
+    <header class="display-flex rgb-to-hex-navbar navbar">
+        <h2>
+            <a href="./index.html">
+                <svg class="brand-icon" viewBox="0 0 300 50">
+                    <symbol id="s1-text">
+                        <text text-anchor="middle" x="40%" y="80%" class="text--line">
+                            WEB-TOOLS
+                        </text>
+                    </symbol>
+
+                    <g class="g-ants">
+                        <use xlink:href="#s1-text" class="text-copy"></use>
+                        <use xlink:href="#s1-text" class="text-copy"></use>
+                        <use xlink:href="#s1-text" class="text-copy"></use>
+                        <use xlink:href="#s1-text" class="text-copy"></use>
+                        <use xlink:href="#s1-text" class="text-copy"></use>
+                    </g>
+
+
+                </svg>
+            </a>
+        </h2>
+    </header>
+    <div class="hex-to-rgb-input-section display-flex">
+        <div class="group">
+            <input class="inputMaterial" type="text" id="hex" required>
+            <label class="rgb-to-hex-label">HEX</label>
+        </div>
+        <div class="group">
+            <input class="inputMaterial" type="text" id="rgb" required>
+            <label class="rgb-to-hex-label">RGB</label>
+        </div>
+    </div>
+
+
+    <div class="display-flex more-app">
+        <a href="./html-minifier" title="HTML Minifier & Beautifier" onclick="saveNavigationData('html')">HTML</a>
+        <a href="./css-minifier" title="CSS Minifier & Beautifier" onclick="saveNavigationData('css')">CSS</a>
+        <a href="./js-minifier" title="JS Uglifier & Beautifier" onclick="saveNavigationData('js')">JS</a>
+    </div>
+
+
+    <!-- <script data-main="scripts/ui-handler.js" src="scripts/require.js"></script> -->
+    <script src="assets/scripts/color-handler.js" defer async></script>
+    <script>
+        function saveNavigationData(url) {
+            localStorage.setItem('current_navigation', url);
+        }
+    </script>
+</body>
+
+</html>
