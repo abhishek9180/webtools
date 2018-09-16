@@ -201,12 +201,12 @@ body {
     width: 130px;
     height: 130px;
     color: #fff;
-    border: 3px solid rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     line-height: 130px;
     font-size: 45px;
     text-align: center;
-    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.8)
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.5)
 }
 
 .flex-menu-item:hover  .icon-shadow {
